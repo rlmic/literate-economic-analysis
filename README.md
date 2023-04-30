@@ -167,6 +167,7 @@ This file can then be used by collaborators to update virtual environments using
 pip install -r requirements.txt
 
 ```
+
 Deactivate the Environment. To return to normal system settings, use the deactivate command.
 
 ```
@@ -175,4 +176,35 @@ deactivate
 
 #### Launch Jupyter Notebook
 
+First, make sure we have Jupyter Notebook installed in your machine. If not installed, [please install](https://jupyter.org/install).
+
+```
+pip install jupyterlab
+```
+
+Add the virtualenv you've cretead in the previous step as a jupyter kernel.
+
+```
+ipython kernel install --name econ-repr --user
+```
+
+Once installed, launch JupyterLab with:
+
+```
+jupyter-lab
+
+```
+
+
 #### Quick-off
+
+```
+pip install pystata
+```
+
+```
+pip install stata_setup
+```
+
+open stata_setup and change line 45 with "config.init(edition)"
+
