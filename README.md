@@ -198,6 +198,8 @@ jupyter-lab
 
 #### Quick-off
 
+##### PyStata
+
 ```
 pip install pystata
 ```
@@ -208,3 +210,91 @@ pip install stata_setup
 
 open stata_setup and change line 45 with "config.init(edition)"
 
+In Stata, enter the following command to locate the folder containing Stata 17 : display c(sysdir_stata)
+
+pip install --upgrade --user stata_setup
+
+
+If you use Windows, it is probably C:\Program Files\Stata16\ado, but it might be someplace else. If you use Mac, it is /Applications/Stata/ado. That is, it is the ado folder in the official Stata folder. If you use Unix, it is /usr/local/stata16/ado.
+
+First of all, you need to install the Anaconda Prompt (conda). Tou have to follow the instructions on the conda website: https://conda.io/projects/conda/en/latest/user-guide/install/windows.html.
+
+Then, you have to install the jupyter notebook. The instructions are available on their website: https://jupyter.org/install.
+
+In a third step, you have to install PyStata: https://www.stata.com/python/pystata/install.html.
+
+In Stata, enter the following command to locate the folder containing Stata 17 : display c(sysdir_stata)
+
+The software is in this folder 'C:\Program Files\Stata17/' in my case and I use the standard edition.
+
+In conda, install PyStata : pip install --upgrade --user stata_setup
+
+Lastly, you have to install the matplotlib library for an illustration with a 3D graph: https://matplotlib.org/stable/users/installing.html
+
+In conda, you can type:
+
+python -m pip install -U pip
+
+python -m pip install -U matplotlib
+
+Now, you are ready to launch Stata from the Jupyter Notebook.
+
+Lastly, you have to install the matplotlib library for an illustration with a 3D graph: https://matplotlib.org/stable/users/installing.html
+
+In conda, you can type:
+
+python -m pip install -U pip
+
+python -m pip install -U matplotlib
+
+Now, you are ready to launch Stata from the Jupyter Notebook.
+
+
+##### Stata Jupyter Kernel¶
+There is also excellent documentation available.
+The Stata Jupyter Kernel enables using stata directly in jupyter notebooks.
+
+It is effectively an alternative interface to use stata if you like jupyter as an interface.
+
+This can be useful if you want to write notebooks that are integrated with stata code.
+
+It supports a wide range of interaction with stata
+
+To install using anaconda tools you can use the following commands in a jupyter notebook:
+
+Tip
+It is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. pip doesn’t have this issue as it doesn’t request user input.
+!conda install -y -c conda-forge stata_kernel
+Copy to clipboard
+once the software is installed you need to install the jupyter kernel on your computer
+
+!python -m stata_kernel.install
+Copy to clipboard
+Warning
+[macOS] When I ran the kernel install step I got the following error:
+
+Cannot import kernel
+Installing Jupyter kernel spec
+WARNING: Could not find Stata path.
+Refer to the documentation to see how to set it manually:
+
+https://kylebarron.dev/stata_kernel/using_stata_kernel/configuration
+Copy to clipboard
+and had to manually set the stata path in the .stata_kernel.conf file located in your home directory to the following:
+
+# Path to stata executable. If you type this in your terminal, it should
+# start the Stata console
+stata_path = /Applications/Stata/StataIC.app/Contents/MacOS/StataIC
+
+# **macOS only**
+# The manner in which the kernel connects to Stata. Either 'console' or
+# 'automation'. 'console' is the default because it allows multiple
+# independent sessions of Stata at the same time.
+execution_mode = automation
+Copy to clipboard
+Unfortunately StataIC is limited on mac os so I had to use automation instead of console as per this issue in the docs However this does enable the use of browse
+If you start jupyter notebook you should now see a stata kernel option. If selected a jupyter notebook will open with a connection to stata. You can verify this on the top-right of the notebook
+
+References:
+https://kylebarron.dev/stata_kernel/
+https://quantecon.github.io/2021-workshop-rsit/week2/session7/stata-and-jupyter.html
