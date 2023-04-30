@@ -112,12 +112,67 @@ If you are using other Linux distribution, chances are you already have Python 3
 $ sudo dnf install python3
 Note that if the version of the python3 package is not recent enough for you, there may be ways of installing more recent versions as well, depending on you distribution. For example installing the python3.9 package on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want to read about multiple Python versions available in Fedora.
 
-### Setup Instructions
+###  Setup Instructions
 
 Now, we are ready to go.
 
-#### Fork/Clone repository
+#### 1. Fork/Clone repository
 
-#### Set up virtual enviroment
+#### 2. Set up virtual enviroment
+
+1. Install virtualenv in your machine. If your machine has a linux-based operating system, run:
+
+```
+pip install virtualenv
+```
+
+Else, 
+
+```
+sudo apt-get install python-pip
+```
+
+2. Create a Virtual Python Environment
+
+Locate yourself on your project directory and run virtualenv to create the new virtual environment.
+
+```
+cd literate-economic-analysis
+virtualenv econ-repr
+```
+
+3. Activate the Environment
+
+Now that we have a virtual environment, we need to activate it.
+
+```
+source econ-repr/bin/activate
+```
+
+After you activate the environment, your command prompt will be modified to reflect the change.
+
+4. Add Libraries and Create a requirements.txt File
+
+After you activate the virtual environment, you can add packages to it using pip. You can also create a description of your dependencies using pip.
+
+The following command creates a file called requirements.txt that enumerates the installed packages.
+
+```
+pip freeze > requirements.txt
+```
+
+This file can then be used by collaborators to update virtual environments using the following command.
+
+```
+pip install -r requirements.txt
+
+```
+Deactivate the Environment. To return to normal system settings, use the deactivate command.
+
+```
+deactivate
+```
+
+#### Launch Jupyter Notebook
 
 #### Quick-off
