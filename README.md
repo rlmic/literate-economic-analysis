@@ -43,20 +43,12 @@ To adequately follow through the Workshop, you must have:
 + Some experience working with the command line,
 + A GitHub account.
 
-If you do not meet the minimum prerequirements, the Worshop will prove a bit more difficult than expected. Please take sometime before our Workshop to fulfill these prerequirements and be ready to go. During our workshop we might take 10 minutes at most to ensure everyone is ready to go. However, to To help you get up to speed with the prerequirements, please read the instructions and links provided in the following links:
+If you do not meet the minimum prerequirements, the Worshop will prove a bit more difficult than expected. Please take sometime before our Workshop to fulfill these prerequirements and be ready to go. During our workshop we might take 10 minutes at most to ensure everyone is ready to go. However, to help you get up to speed with the prerequirements, please read the instructions and links provided.
 
+#### Software installation
 
-
-#### Github
-
-GitHub is a code hosting platform for version control and collaboration, widely use to work together on projects from anywhere.
-
-
-If you do not have a github account, please make sure to follow [these](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) instructions to create a new github account. 
-
-
-##### OS X
-
+##### Python
+OS X
 
 Python is probably already installed on your system. To check if it’s installed, go to Applications > Utilities and click on Terminal.
 
@@ -68,7 +60,7 @@ Install Python with Homebrew
 Homebrew is a package installer.
 
 
-* Python installed in our systems
+Python installed in our systems
 
 Install Python with Homebrew
 
@@ -92,7 +84,7 @@ Next, install Python.
 brew install python
 ```
 
-##### Ubuntu Linux machines.
+Ubuntu Linux machines.
 
 To see which version of Python 3 you have installed, open a command prompt and run
 
@@ -112,11 +104,29 @@ If you are using other Linux distribution, chances are you already have Python 3
 $ sudo dnf install python3
 Note that if the version of the python3 package is not recent enough for you, there may be ways of installing more recent versions as well, depending on you distribution. For example installing the python3.9 package on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want to read about multiple Python versions available in Fedora.
 
+##### Stata
+
+Please adquire your Stata license and follow the instructions provided in [Stata's website](https://www.stata.com/install-guide/) to kickoff running code in Stata.
+
+#### Command Line
+
+#### Github
+
+GitHub is a code hosting platform for version control and collaboration, widely use to store and share code, track changes, and collaborate on projects with others. To start using GitHub, you need to create an account. You can do this by going to [GitHub](https://github.com) and sign up for a free account.
+
+Additional resources:
+
++ Creating a [new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
++ Learning more about how GitHub can support collaborative documentation-writing and knowledge sharing: [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
+
+
 ###  Setup Instructions
 
 Now, we are ready to go.
 
 #### 1. Fork/Clone repository
+
+Clone the repository: To start working on your code locally or remotely, you need to clone the repository. To do this, click on the green “Code” button and copy the URL. Then open up your terminal (or command prompt on Windows) and navigate to the directory where you want to store your code. Type “git clone [repository URL]” to clone the repository.
 
 #### 2. Set up virtual enviroment
 
@@ -298,3 +308,6 @@ If you start jupyter notebook you should now see a stata kernel option. If selec
 References:
 https://kylebarron.dev/stata_kernel/
 https://quantecon.github.io/2021-workshop-rsit/week2/session7/stata-and-jupyter.html
+
+https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter
+https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a
