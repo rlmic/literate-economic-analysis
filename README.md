@@ -1,19 +1,53 @@
-#  _LITERATE_ ECONOMIC DATA ANALYSIS 
+<p align="left">
+<img src="https://i0.wp.com/www.bitss.org/wp-content/uploads/2019/03/CEGA-logo-RGB-300-dpi-colour.png?ssl=1" data-canonical-src="https://www.bitss.org" width="300" height="130" />
+</p>
+
+
+<h1 align="center">
+
+<b>Literate Economic Data Analysis </b>
+
+</h1>
+
+<h2 align="center">
+
+<b>A Case for Computational Notebooks in Economics</b>
+
+</h2>
 
 <p align="center">
-      <img src="https://www.bitss.org/wp-content/uploads/2015/07/bitss-55a55026v1_site_icon.png" width="100" height="100" align="left">
-
+<img src="https://cega.berkeley.edu/wp-content/uploads/2018/10/sidebar_Final-logo_vertical-01_2_3_1.png" data-canonical-src="https://www.bitss.org" width="200" height="230" />
 </p>
 
 <p align="center">
-      <img src="https://i0.wp.com/www.bitss.org/wp-content/uploads/2019/03/CEGA-logo-RGB-300-dpi-colour.png?ssl=1" width="500" height="300"  align="right">
+Daniela Pinto Veizaga
 </p>
-
+<p align="center">
+University of California, Berkeley
+</p>
+<p align="center">
+CEGA
+</p>
 
 ## :wave: Introduction
 
-The  Literate Economic Data Analysis (LEDA) workshop is a hands-on and tutorial launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to bring a group of fellows from across the world to work on machine learning, artificial intelligence, and data science projects that have a social impact in partnership with social good organizations. 
+The  Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to bring a 
+events, which provide participants with an overview of tools and practices for transparent and reproducible social science research. We have hosted ten events as of 2022, reaching over 400 social science researchers from around the world. As of August 2022, the RT2 program has received a grant by the National Institute of Health’s NIAID Research Education Program (R25) to cover its operational expenses for the next five years. BITSS is excited to continue training participants in open science through 2027 and beyond.
 
+The RT2 curriculum typically covers the following topics:
+
+Threats to research credibility and reproducibility and their relation to the scientific ethos (Mertonian Norms, scientific misconduct and researcher degrees of freedom, and transparency in the research cycle);
+Improved research design specification (pre-registration and pre-analysis plans, power analysis, and pre-analysis plans for experimental or observational research);
+Ethical and open research (ethical research for open science, data management, and data de-Identification);
+Tools and methods for research reproducibility and collaboration (hands-on sessions on version control with GitHub and the GitHub App or GitKraken, and hands-on sessions on Dynamic Documents for R or Stata users);
+Evidence synthesis, reproducibility, and interpretation (methods for meta-analyses and systematic reviews, transparency and reproducibility with administrative data, and replicability and reproducibility); and
+Open science software and method innovations.
+
+
+
+Computation notebooks allow users to combine interactive code with text and graphical objects. They have become a successful mechanism for sharing the analysis of data and documenting research workflows. Notebooks has been an excellent tool for prototyping and writing examples to showcase a piece of software.
+
+The EDS book aims to complement the science and methodological development embedded within academic journals using open infrastructure to translate research outputs into FAIR notebooks which benefit from a collaborative and open reviewing process (Figure 2).
 In addition to hands-on project-based training, the summer program also consists of workshops, tutorials, and ethics discussion groups based on our data science for social good curriculum designed to train the fellows in doing practical data science and artificial intelligence for social impact.
 
 <p align="center" width="100%">
