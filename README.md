@@ -38,9 +38,9 @@ CEGA
 
 
 ## 0. :wave: Introduction
-<p align="justify">
+<div align="justify">
 Computation notebooks have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
-</p>
+</div>
 
 <p align="center" width="100%">
     <img src="https://edsbook.org/_images/notebook-cycle.jpg" width="80%" height="410" />
@@ -51,19 +51,17 @@ Source: The Turing Way project. Illustration by Scriberia as part of The Turing 
 </p>
 
 ### Who is this workshop for?
-<p align="justify">
+<div align="justify">
 This workshop is designed for those who want to take their data analysis skills and expertise in Stata and potentiate them with computation notebooks. Jupyter notebook is one such form of interactive computing environment that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and resources. 
-</p>
 
-<p align="justify">
 The workshop will introduce you to create static documents with Jupyter notebooks, add interactivity to them and integrate them with your regular workflow in Stata, translating code, widgets, narrative text, equations, and graphical objects into one working, collaborative, interactive and reproducible document.
-</p>
+</div>
 
 
 ### What we will cover?
-<p align="justify">
+<div align="justify">
 The curriculum lays out the importance of reproducibility ◊in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume atendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
-</p>
+
 The curriculum is as follows:
 
 1. [ Background. ](#back)
@@ -71,18 +69,16 @@ The curriculum is as follows:
 3. [ Setup Instructions. ](#setup)
 4. [ Kick-off. ](#kick)
 5. [ Miscellaneous. ](#misc)
+</div>
 
 <a name="back"></a>
 ## 1. Background
 
-<p align="justify">
+<div align="justify">
 The name of this workshop is inspired in Donald Knuth's conceptual use of literate programming, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, with snippets of macros and source code, which can be compiled and rerun. An executable paper!
-</p>
-<p align="justify">
-As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is in our best interest to ensure our analyses are reproducible, properly documented and executable.
-</p>
 
-<p align="justify">
+As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is in our best interest to ensure our analyses are reproducible, properly documented and executable.
+
 Jupyter notebooks, as well as other computation notebooks such as RMarkdowns, are heavily used in data science, because of it's interoperability with multiple programming languages --Julia, Python, R, SQL, bash, and Stata! Incorporating results directly into your documents is an important step in reproducible research.
 Jupyter notebooks can be comprised mainly of three types of cells (though more can be added with plugins):
 
@@ -91,12 +87,13 @@ Jupyter notebooks can be comprised mainly of three types of cells (though more c
 + Code Cells: Allow users to edit and write code, with full syntax highlighting and tab completion. The programming language you use depends on the kernel, and the default kernel runs Python. The results that are returned from this computation are then displayed in the notebook as the cell’s output.
 
 + Raw cells: Provide a place in which you can write output directly. Raw cells are not evaluated by the notebook.
-</p>
+
 
 
 <a name="preq"></a>
 ## 2. Prerequirements
 
+<div align="justify">
 To adequately follow the workshop, you must fulfill several requirements. Please take sometime before our workshop to fulfill them:
 
 + Install Python and Stata in your machine,
@@ -107,13 +104,12 @@ To adequately follow the workshop, you must fulfill several requirements. Please
 
 ### 2.1. Command Line or CLI
 
-<p align="justify">
+
 The command line interface allows users to type text commands instructing the computer to do specific tasks, instead of clicking around. Most operating systems come with a graphical user interface (GUI), enabling us to see things on our screens and click around.
 </p>
 
-<p align="justify">
+
 Compared to a visually attractive GUI, the command line is less user friendly --initially! However, as we perform more data intensive tasks, the CLI is a powerful and vital resource because it exploits less computational resources and is highly efficient for performing repetitive tasks.
-</p>
 
 ### 2.2. Python
 
@@ -329,6 +325,7 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 + [PyStata](https://www.stata.com/python/pystata/install.html)
 
+</div>
 
 
 
