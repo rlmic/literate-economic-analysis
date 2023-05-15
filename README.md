@@ -11,7 +11,7 @@
 
 <h2 align="center">
 
-<b>Computational Notebooks</b>
+<b>Computation Notebooks</b>
 
 </h2>
 
@@ -31,41 +31,23 @@ CEGA
 
 ## :wave: Introduction
 
-The  Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to bring a 
-events, which provide participants with an overview of tools and practices for transparent and reproducible social science research. We have hosted ten events as of 2022, reaching over 400 social science researchers from around the world. As of August 2022, the RT2 program has received a grant by the National Institute of Health’s NIAID Research Education Program (R25) to cover its operational expenses for the next five years. BITSS is excited to continue training participants in open science through 2027 and beyond.
+*Computation notebooks* have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. 
 
-The RT2 curriculum typically covers the following topics:
+The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial, launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/)[^1], through which we will learn how notebooks can complement the science and methodological development of social science research.
 
-Threats to research credibility and reproducibility and their relation to the scientific ethos (Mertonian Norms, scientific misconduct and researcher degrees of freedom, and transparency in the research cycle);
-Improved research design specification (pre-registration and pre-analysis plans, power analysis, and pre-analysis plans for experimental or observational research);
-Ethical and open research (ethical research for open science, data management, and data de-Identification);
-Tools and methods for research reproducibility and collaboration (hands-on sessions on version control with GitHub and the GitHub App or GitKraken, and hands-on sessions on Dynamic Documents for R or Stata users);
-Evidence synthesis, reproducibility, and interpretation (methods for meta-analyses and systematic reviews, transparency and reproducibility with administrative data, and replicability and reproducibility); and
-Open science software and method innovations.
-
-
-
-Computation notebooks allow users to combine interactive code with text and graphical objects. They have become a successful mechanism for sharing the analysis of data and documenting research workflows. Notebooks has been an excellent tool for prototyping and writing examples to showcase a piece of software.
-
-The EDS book aims to complement the science and methodological development embedded within academic journals using open infrastructure to translate research outputs into FAIR notebooks which benefit from a collaborative and open reviewing process (Figure 2).
-In addition to hands-on project-based training, the summer program also consists of workshops, tutorials, and ethics discussion groups based on our data science for social good curriculum designed to train the fellows in doing practical data science and artificial intelligence for social impact.
+In this workshop we will learn how to integrate Jupyter Notebooks and Stata to translate research outputs into collaborative, interactive and reproducible resources that combine code, interactive widgets, narrative text, equations, and graphical objects, such as images and videos, into one working document.
 
 <p align="center" width="100%">
-    <img src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" width="80%" height="410" />
+    <img src="https://edsbook.org/_images/notebook-cycle.jpg" width="80%" height="410" />
 </p>
 
 <p align="center">
-Source: The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.
+Source: The Turing Way project. Illustration by Scriberia as part of The Turing Way book dash in November 2022. Zenodo. http://doi.org/10.5281/zenodo.7587336¶
 </p>
+
 ## Who is this workshop for?
 
-The primary audience for this guide is the set of fellows coming to DSSG but we want everything we create to be open and accessible to larger world. We hope this is useful to people beyond the summer fellows coming to DSSG.
-
-If you are applying to the program or have been accepted as a fellow, check out the manual to see how you can prepare before arriving, what orientation and training will cover, and what to expect from the summer.
-
-If you are interested in learning at home, check out the tutorials and teach-outs developed by our staff and fellows throughout the summer, and to suggest or contribute additional resources.
-
-*Another one of our goals is to encourage collaborations. Anyone interested in doing this type of work, or starting a DSSG program, to build on what we've learned by using and contributing to these resources.
+This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio. You will learn to create static documents, to add interactivity to them with Shiny and htmlwidgets, and to create presentations in various formats such as reveal.js, beamer, and pptx. The workshop will also introduce you to Quarto projects which you can use to build websites and write blogs and books. Finally, you will learn various ways to deploy and publish your Quarto projects on the web. Independent modules will also highlight authoring in Quarto with Jupyter and VS Code as well as other text editors.
 
 ## What will be cover in this guide?
 
@@ -404,3 +386,8 @@ https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter
 https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a
 
 ## Contact Information
+
+Daniela Pinto Veizaga
+
+
+[^1]: A confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
