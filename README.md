@@ -52,7 +52,7 @@ The workshop will introduce you to create static documents with Jupyter notebook
 </p>
 
 
-### What will cover?
+### What we will cover?
 
 Our number one priority at DSSG is to train fellows to do responsible data science/ML/AI for social good work. This curriculum includes many things you'd find in a data science course or bootcamp, but with an emphasis on solving problems with social impact, integrating data science with the social sciences, understanding and discussing ethical implications of the work, as well as privacy, and confidentiality issues.
 
@@ -128,20 +128,20 @@ Homebrew is a package installer.
 
 First, install Homebrew.
 
-```{bash}
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 Then, install brew to Path:
 
-```{bash}
-$ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+```bash
+$export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 ```
 
 Next, install Python.
 
-```{bash}
-brew install python
+```bash
+$brew install python
 ```
 
 Ubuntu Linux machines.
@@ -188,74 +188,20 @@ Now, we are ready to go.
 
 Clone the repository: To start working on your code locally or remotely, you need to clone the repository. To do this, click on the green “Code” button and copy the URL. Then open up your terminal (or command prompt on Windows) and navigate to the directory where you want to store your code. Type “git clone [repository URL]” to clone the repository.
 
-#### 2. Set up virtual enviroment
+#### 2. Installe required packages
 
-1. Install virtualenv in your machine. If your machine has a linux-based operating system, run:
-
-```
-pip install virtualenv
-```
-
-Else, 
-
-```
-sudo apt-get install python-pip
-```
-
-2. Create a Virtual Python Environment
-
-Locate yourself on your project directory and run virtualenv to create the new virtual environment.
-
-```
-cd literate-economic-analysis
-virtualenv econ-repr
-```
-
-3. Activate the Environment
-
-Now that we have a virtual environment, we need to activate it.
-
-```
-source econ-repr/bin/activate
-```
-
-After you activate the environment, your command prompt will be modified to reflect the change.
-
-4. Add Libraries and Create a requirements.txt File
-
-After you activate the virtual environment, you can add packages to it using pip. You can also create a description of your dependencies using pip.
-
-The following command creates a file called requirements.txt that enumerates the installed packages.
-
-```
-pip freeze > requirements.txt
-```
-
-This file can then be used by collaborators to update virtual environments using the following command.
-
-```
-pip install -r requirements.txt
-
-```
-
-Deactivate the Environment. To return to normal system settings, use the deactivate command.
-
-```
-deactivate
-```
-
-#### Launch Jupyter Notebook
+#### 3. Launch Jupyter Notebook
 
 First, make sure we have Jupyter Notebook installed in your machine. If not installed, [please install](https://jupyter.org/install).
 
-```
-pip install jupyterlab
+```bash
+$pip install jupyterlab
 ```
 
 Add the virtualenv you've cretead in the previous step as a jupyter kernel.
 
-```
-ipython kernel install --name econ-repr --user
+```bash
+$ipython kernel install --name econ-repr --user
 ```
 
 Once installed, launch JupyterLab with:
