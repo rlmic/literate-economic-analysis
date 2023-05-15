@@ -36,9 +36,10 @@ CEGA
 <img src="https://bitss.github.io/ACRE/BITSS_logo_horizontal.png" data-canonical-src="https://www.bitss.org" width="210" height="90" />
 </p>
 
+<div align="justify">
 
 ## 0. :wave: Introduction
-<div align="justify">
+
 Computation notebooks have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
 </div>
 
@@ -324,6 +325,8 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 + [Stata and Jupyter](https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a)
 
 + [PyStata](https://www.stata.com/python/pystata/install.html)
+
+
 
 </div>
 
