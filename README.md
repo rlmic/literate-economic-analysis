@@ -194,9 +194,11 @@ Clone the repository: To start working on your code locally or remotely, you nee
 
 First, make sure we have Jupyter Notebook installed in your machine. If not installed, [please install](https://jupyter.org/install).
 
-```console
-foo@bar:~$ pip install jupyterlab
+
+```shell
+$ pip install jupyterlab
 ```
+
 
 Add the virtualenv you've cretead in the previous step as a jupyter kernel.
 
