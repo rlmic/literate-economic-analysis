@@ -90,18 +90,23 @@ Jupyter notebooks can be comprised mainly of three types of cells (though more c
 <a name="preq"></a>
 ## 2. Prerequirements
 
-To adequately follow through the workshop, you must have:
+To adequately follow the workshop, you must fulfill several requirements. Please take sometime before our workshop to fulfill them:
 
-+ Python and Stata installed in your machine,
++ Install Python and Stata in your machine,
 + Some experience working with the command line,
-+ A GitHub account.
-
-Please take sometime before our workshop to fulfill these prerequirements and be ready to go.
-
-
-### 2.1. Command Line
++ Create a GitHub account,
++ Familiarize yourself with version control.
 
 
+### 2.1. Command Line or CLI
+
+<p align="justify">
+The command line interface allows users to type text commands instructing the computer to do specific tasks, instead of clicking around. Most operating systems come with a graphical user interface (GUI), enabling us to see things on our screens and click around.
+</p>
+
+<p align="justify">
+Compared to a visually attractive GUI, the command line is less user friendly --initially! However, as we perform more data intensive tasks, the CLI is a powerful and vital resource because it exploits less computational resources and is highly efficient for performing repetitive tasks.
+</p>
 
 ### 2.2. Python
 
@@ -162,13 +167,13 @@ $ sudo dnf install python3
 Note that if the version of the python3 package is not recent enough for you, there may be ways of installing more recent versions as well, depending on you distribution. For example installing the python3.9 package on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want to read about multiple Python versions available in Fedora.
 
 
-### 2.3. Github
+### 2.3. [Github](https://github.com)
 
-GitHub is a code hosting platform for version control and collaboration, widely use to store and share code, track changes, and collaborate on projects with others. To start using GitHub, you need to create an account. You can do this by clicking [here](https://github.com) and signing up for a free account.
+GitHub is a code hosting platform for version control and collaboration, widely use to store and share code, track changes, and collaborate on projects with others. To start using GitHub, you need to create an account.
 
-### 2.4. Stata
+### 2.4. [Stata](https://www.stata.com/install-guide/)
 
-Adquire your Stata license and install it your computer. [Stata's](https://www.stata.com/install-guide/) website is comprehensive in terms of the steps needed to install Stata.
+Adquire your Stata license and install it your computer. Stata's website is comprehensive in terms of the steps needed to install Stata.
 
 
 <a name="setup"></a>
@@ -333,10 +338,18 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 ### 5.2 Other  useful resources
 
+> Command line
++ [Introduction to command line](https://tutorial.djangogirls.org/en/intro_to_command_line/)
+
++ [Command line for beginners](https://learndjango.com/tutorials/terminal-command-line-beginners)
+
+> Github
++ [Creating a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
++ [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
+
+> Computational notebooks
 + [Environmental Data Science book](https://edsbook.org/notebooks/gallery/ac327c3a-5264-40a2-8c6e-1e8d7c4b37ef/notebook.html)
 
-+ Creating a [new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
-+ Learning more about how GitHub can support collaborative documentation-writing and knowledge sharing: [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
 
 
 [^1]: This tutorial was launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
