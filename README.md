@@ -29,7 +29,7 @@ University of California, Berkeley
 CEGA
 </p>
 
-## :wave: Introduction
+## 0. :wave: Introduction
 <p align="justify">
 Computation notebooks have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
 </p>
@@ -54,18 +54,30 @@ The workshop will introduce you to create static documents with Jupyter notebook
 
 ### What we will cover?
 
-Our number one priority at DSSG is to train fellows to do responsible data science/ML/AI for social good work. This curriculum includes many things you'd find in a data science course or bootcamp, but with an emphasis on solving problems with social impact, integrating data science with the social sciences, understanding and discussing ethical implications of the work, as well as privacy, and confidentiality issues.
+The curriculum lays out the importance of reproducibility in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume atendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
+
+The curriculum is as follows:
+
+1. [ Background. ](#back)
+2. [ Prerequirements. ](#preq)
+3. [ Setup Instructions. ](#setup)
+4. [ Setup Instructions. ](#setup)
 
 
-## Background
+<a name="back"></a>
+## 1. Background
+
+
 The name of this workshop is inspired in Donald Knuth's conceptual use of *literate programming*, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, interspersed with snippets of macros and source code, which can be compiled and rerun. An executable paper!
 
-As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is of our best interest to matter which literate programming tool you use, only run the cells from top to bottom – ONLY. The number 1 cause of irreproducible jupyter notebooks is that the original authors run the cells out of order, which can't be reproduced without documentation about which cells in which order. So run your literate programming notebooks from top to bottom only.
+As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is of our best interest to ensure our analysis is reproducible. The number one cause of irreproducible research is that authors produce their analysis out of order, without proper documentation
+
+jupyter notebooks is that the original
+
+run the cells out of order, which can't be reproduced without documentation about which cells in which order. So run your literate programming notebooks from top to bottom only.
 
 
-reproducibility in the context of this handbook, laying out its importance for science and scientists, and providing an overview of the common concepts, tools and resources. The first few chapters were on version control, testing, and reproducible computational environments. Since the start of this project in 2019, many additional chapters have been written, edited, reviewed, read and promoted by over 300 contributors.
-Jupyter Notebooks
-Jupyter Notebook is an interactive computing environment that enables users to author notebook documents that include code, interactive widgets, plots, narrative text, equations, images and even videos! Jupyter notebooks are heavily used in data science, and it would behoove you to get comfortable with the tool. The jupyter name comes from 3 programming languages: Julia, Python, and R. You can use one programming language per document, and it is done through choosing a kernel (e.g. Python, R, Go, and more -- get the full list of kernels from the wiki).
+ Jupyter notebooks are heavily used in data science, and it would behoove you to get comfortable with the tool. The jupyter name comes from 3 programming languages: Julia, Python, and R. You can use one programming language per document, and it is done through choosing a kernel (e.g. Python, R, Go, and more -- get the full list of kernels from the wiki).
 
 Jupyter notebooks can be comprised mainly of two types of cells (though more can be added with plugins).
 
@@ -92,8 +104,16 @@ RMarkdown is another popular literate programming tool and can be considered an 
 
 Typically, RMarkdown files are edited from within RStudio. The R for Data Science book contains a great chapter on RMarkdown for more information: https://r4ds.had.co.nz/r-markdown.html.
 
+<a name="preq"></a>
+## 2. Prerequirements
 
-## Quickstart
+<a name="preq"></a>
+## 2. Prerequirements
+
+sometext
+
+
+
 
 ### Prerequirements
 
@@ -195,8 +215,8 @@ Clone the repository: To start working on your code locally or remotely, you nee
 First, make sure we have Jupyter Notebook installed in your machine. If not installed, [please install](https://jupyter.org/install).
 
 
-```shell
-$ pip install jupyterlab
+```{shell}
+pip install jupyterlab
 ```
 
 
