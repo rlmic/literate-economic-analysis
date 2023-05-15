@@ -33,9 +33,10 @@ CEGA
 
 *Computation notebooks* have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. 
 
-The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial, launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/)[^1], through which we will learn how notebooks can complement the science and methodological development of social science research.
+The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
 
-In this workshop we will learn how to integrate Jupyter Notebooks and Stata to translate research outputs into collaborative, interactive and reproducible resources that combine code, interactive widgets, narrative text, equations, and graphical objects, such as images and videos, into one working document.
+In this workshop we will exploit Jupyter Notebooks and Stata to translate code, widgets, narrative text, equations, and graphical objects into one working, collaborative, interactive and reproducible document.
+
 
 <p align="center" width="100%">
     <img src="https://edsbook.org/_images/notebook-cycle.jpg" width="80%" height="410" />
@@ -47,7 +48,7 @@ Source: The Turing Way project. Illustration by Scriberia as part of The Turing 
 
 ## Who is this workshop for?
 
-This workshop is designed for those who want to take their R Markdown skills and expertise and apply them in Quarto, the next generation of R Markdown. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio. You will learn to create static documents, to add interactivity to them with Shiny and htmlwidgets, and to create presentations in various formats such as reveal.js, beamer, and pptx. The workshop will also introduce you to Quarto projects which you can use to build websites and write blogs and books. Finally, you will learn various ways to deploy and publish your Quarto projects on the web. Independent modules will also highlight authoring in Quarto with Jupyter and VS Code as well as other text editors.
+This workshop is designed for those who want to take their data analysis skills and expertise in Stata and potentiate them with Jupyter Notebooks. Quarto is an open-source scientific and technical publishing system that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and other online resources. In this workshop you will learn how to apply your reproducible authoring skills to the Quarto format and learn about new tools and workflows for authoring with Quarto in RStudio. You will learn to create static documents, to add interactivity to them with Shiny and htmlwidgets, and to create presentations in various formats such as reveal.js, beamer, and pptx. The workshop will also introduce you to Quarto projects which you can use to build websites and write blogs and books. Finally, you will learn various ways to deploy and publish your Quarto projects on the web. Independent modules will also highlight authoring in Quarto with Jupyter and VS Code as well as other text editors.
 
 ## What will be cover in this guide?
 
@@ -390,4 +391,4 @@ https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-di
 Daniela Pinto Veizaga
 
 
-[^1]: A confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
+[^1]: This tutorial was launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
