@@ -1,6 +1,8 @@
 #  <img src="https://www.bitss.org/wp-content/uploads/2015/07/bitss-55a55026v1_site_icon.png" data-canonical-src="https://www.bitss.org" width="30" height="30" /> _LITERATE_ ECONOMIC DATA ANALYSIS
 
- <img src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="600" height="500" />
+<p align="center" width="100%">
+    <img src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" width="80%" height="500" />
+</p>
 
 <p align="center">
 Source: The Turing Way project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.
