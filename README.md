@@ -1,4 +1,4 @@
-#  <img src="https://www.bitss.org/wp-content/uploads/2015/07/bitss-55a55026v1_site_icon.png" data-canonical-src="https://www.bitss.org" width="30" height="30" /> _LITERATE_ ECONOMIC DATA ANALYSIS
+#  <img src="https://www.bitss.org/wp-content/uploads/2015/07/bitss-55a55026v1_site_icon.png" data-canonical-src="https://www.bitss.org" width="50" height="50" /> _LITERATE_ ECONOMIC DATA ANALYSIS
 
 <p align="center" width="100%">
     <img src="https://the-turing-way.netlify.app/_images/reproducibility.jpg" width="80%" height="500" />
