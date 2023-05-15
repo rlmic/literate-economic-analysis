@@ -236,26 +236,15 @@ To install using anaconda tools, it is important to specify -y when issuing inst
 ```conda
 conda install -y -c conda-forge stata_kernel
 ```
-Once the software is installed you need to install the jupyter kernel on your computer
+Once the software is installed you need to install the jupyter kernel on your computer.
 
 ```bash
 python -m stata_kernel.install
 ```
 
-https://kylebarron.dev/stata_kernel/using_stata_kernel/configuration
-Copy to clipboard
-and had to manually set the stata path in the .stata_kernel.conf file located in your home directory to the following:
-
-
-stata_path = /Applications/Stata/StataIC.app/Contents/MacOS/StataIC
-
-execution_mode = automation
-Unfortunately StataIC is limited on mac os so I had to use automation instead of console as per this issue in the docs.
-If you start jupyter notebook you should now see a stata kernel option. If selected a jupyter notebook will open with a connection to stata. You can verify this on the top-right of the notebook
-
 ### 3.3. Launch Jupyter Notebook
 
-Once installed, launch your notebook with the following command:
+Once installed, launch your notebook with the following commands:
 
 > jupyter lab
 
@@ -264,10 +253,16 @@ jupyter-lab
 ```
 
 > jupyter notebook
+```bash
+jupyter notebook
+```
 
 <a name="kick"></a>
 
+
 ## 4. Kick-off
+
+There are two ways to run Stata code in jupyter notebook, if you want to use a Stata Kernell to run Stata code in Jupyter, then you must select the `Stata` kernell.
 
 Execute the jupyter notebooks available at the following path `notebooks`:
 
@@ -320,7 +315,7 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 + [Install Jupyter](https://jupyter.org/install)
 
-+ [Jupyter noteboo}(https://jupyter.org/install)
++ [Jupyter notebook](https://jupyter.org/install)
 
 > Stata and Jupyter
 
