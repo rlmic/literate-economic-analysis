@@ -53,9 +53,9 @@ The workshop will introduce you to create static documents with Jupyter notebook
 
 
 ### What we will cover?
-
+<p align="justify">
 The curriculum lays out the importance of reproducibility in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume atendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
-
+</p>
 The curriculum is as follows:
 
 1. [ Background. ](#back)
@@ -67,17 +67,16 @@ The curriculum is as follows:
 <a name="back"></a>
 ## 1. Background
 
+<p align="justify">
+The name of this workshop is inspired in Donald Knuth's conceptual use of literate programming, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, with snippets of macros and source code, which can be compiled and rerun. An executable paper!
+</p>
+<p align="justify">
+As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is of our best interest to ensure our analysis is reproducible adn executable by anybody. The number one cause of irreproducible research is that authors produce their analysis out of order and without proper documentation. 
+</p>
+<p align="justify">
+Jupyter notebooks are heavily used in data science, because of it's  The jupyter name comes from 3 programming languages: Julia, Python, and R. You can use one programming language per document, and it is done through choosing a kernel (e.g. Python, R, Go, and more -- get the full list of kernels from the wiki).
+</p>
 
-The name of this workshop is inspired in Donald Knuth's conceptual use of *literate programming*, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, interspersed with snippets of macros and source code, which can be compiled and rerun. An executable paper!
-
-As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is of our best interest to ensure our analysis is reproducible. The number one cause of irreproducible research is that authors produce their analysis out of order, without proper documentation
-
-jupyter notebooks is that the original
-
-run the cells out of order, which can't be reproduced without documentation about which cells in which order. So run your literate programming notebooks from top to bottom only.
-
-
- Jupyter notebooks are heavily used in data science, and it would behoove you to get comfortable with the tool. The jupyter name comes from 3 programming languages: Julia, Python, and R. You can use one programming language per document, and it is done through choosing a kernel (e.g. Python, R, Go, and more -- get the full list of kernels from the wiki).
 
 Jupyter notebooks can be comprised mainly of two types of cells (though more can be added with plugins).
 
@@ -107,21 +106,22 @@ Typically, RMarkdown files are edited from within RStudio. The R for Data Scienc
 <a name="preq"></a>
 ## 2. Prerequirements
 
-
-
-### Prerequirements
-
-To adequately follow through the Workshop, you must have:
+To adequately follow through the workshop, you must have:
 
 + Python and Stata installed in your machine,
 + Some experience working with the command line,
 + A GitHub account.
 
-If you do not meet the minimum prerequirements, the Worshop will prove a bit more difficult than expected. Please take sometime before our Workshop to fulfill these prerequirements and be ready to go. During our workshop we might take 10 minutes at most to ensure everyone is ready to go. However, to help you get up to speed with the prerequirements, please read the instructions and links provided.
+If you do not meet the minimum prerequirements, the workshop will prove a bit more difficult than expected. Please take sometime before our workshop to fulfill these prerequirements and be ready to go. During our workshop we might take a few minutes ensure everyone is ready to go.
 
-#### Software installation
+### 2.1 Software installation
 
-##### Python
+### a. Command Line
+
+
+
+### b. Python
+
 OS X
 
 Python is probably already installed on your system. To check if it’s installed, go to Applications > Utilities and click on Terminal.
@@ -178,58 +178,46 @@ If you are using other Linux distribution, chances are you already have Python 3
 $ sudo dnf install python3
 Note that if the version of the python3 package is not recent enough for you, there may be ways of installing more recent versions as well, depending on you distribution. For example installing the python3.9 package on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want to read about multiple Python versions available in Fedora.
 
-##### Stata
 
-Please adquire your Stata license and follow the instructions provided in [Stata's website](https://www.stata.com/install-guide/) to kickoff running code in Stata.
+### c. Github
 
-#### Command Line
-
-#### Github
-
-GitHub is a code hosting platform for version control and collaboration, widely use to store and share code, track changes, and collaborate on projects with others. To start using GitHub, you need to create an account. You can do this by going to [GitHub](https://github.com) and sign up for a free account.
+GitHub is a code hosting platform for version control and collaboration, widely use to store and share code, track changes, and collaborate on projects with others. To start using GitHub, you need to create an account. You can do this by clicking [here](https://github.com) and signing up for a free account.
 
 Additional resources:
 
 + Creating a [new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
 + Learning more about how GitHub can support collaborative documentation-writing and knowledge sharing: [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
 
+### d. Stata
+
+Adquire your Stata license and install it your computer. [Stata's website](https://www.stata.com/install-guide/) is comprehensive in terms of the steps needed to install Stata.
+
+
+
 <a name="setup"></a>
-## 3. Set-up Instructions
+## 3. Setup Instructions
 
-Now, we are ready to go.
+### 3.1. Clone repository
 
-#### 1. Fork/Clone repository
+To start working on your code locally or remotely, you need to clone the repository. To do this, click on the green “Code” button and copy the URL. Then, open up your terminal (or command prompt on Windows) and navigate to the directory where you want to store your code. In the command line type:
 
-Clone the repository: To start working on your code locally or remotely, you need to clone the repository. To do this, click on the green “Code” button and copy the URL. Then open up your terminal (or command prompt on Windows) and navigate to the directory where you want to store your code. Type “git clone [repository URL]” to clone the repository.
+```{bash}
+git clone https://github.com/rlmic/literate-economic-analysis.git
+```
 
-#### 2. Install required packages
-
-#### 3. Launch Jupyter Notebook
-
+### 3.2. Install required packages
 First, make sure we have Jupyter Notebook installed in your machine. If not installed, [please install](https://jupyter.org/install).
-
 
 ```{shell}
 pip install jupyterlab
 ```
-
-Once installed, launch JupyterLab with:
-
-```
-jupyter-lab
-
-```
-
-<a name="setup"></a>
-## 3=4. Set-up Instructions
-
 ##### PyStata
 
-```
+```bash
 pip install pystata
 ```
 
-```
+```bash
 pip install stata_setup
 ```
 
@@ -277,6 +265,8 @@ Now, you are ready to launch Stata from the Jupyter Notebook.
 
 ##### Stata Jupyter Kernel¶
 
+pip3 install -U git+https://github.com/kylebarron/stata_kernel
+python3 -m stata_kernel.install
 There is also excellent documentation available.
 The Stata Jupyter Kernel enables using stata directly in jupyter notebooks.
 
@@ -327,9 +317,29 @@ https://quantecon.github.io/2021-workshop-rsit/week2/session7/stata-and-jupyter.
 https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter
 https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a
 
-## Contact Information
 
-Daniela Pinto Veizaga
+### 3.3. Launch Jupyter Notebook
+
+Once installed, launch your notebook with the following command:
+
+```bash
+jupyter-lab
+```
+
+<a name="kick"></a>
+
+## 4. Kick-off
+
+Execute the jupyter notebooks available at the following path `notebooks`:
+
++ [notebook-pystata.ipynb](https://github.com/rlmic/literate-economic-analysis/blob/main/notebooks/notebook-pystata.ipynb)
+
++ [notebook-stata-kernel.ipynb](https://github.com/rlmic/literate-economic-analysis/blob/main/notebooks/notebook-stata-kernel.ipynb)
+
+
+## Other resources
+
++ [Environmental Data Science book](https://edsbook.org/notebooks/gallery/ac327c3a-5264-40a2-8c6e-1e8d7c4b37ef/notebook.html)
 
 
 [^1]: This tutorial was launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
