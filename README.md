@@ -195,6 +195,7 @@ pip install --upgrade --user stata_setup
 ```
 
 + b. Then, fix the stata set_up file by opening `stata_setup` file and change line `45` with:
+
 ```nano
 config.init(edition)
 ```
@@ -203,6 +204,13 @@ config.init(edition)
 
 ```stata
 display c(sysdir_stata)
+```
+
++ d. Open the `constants.py` file under `src`. Change these variables to match the edition and path to the folder containing Stata in your machine. 
+
+```python
+sys_dir = "/Applications/Stata/"
+stat_edi = "mp"
 ```
 
 #### Other packages
@@ -216,40 +224,34 @@ python -m pip install -U matplotlib
 #### Stata Jupyter Kernel
 
 The Stata Jupyter Kernel enables using stata directly in jupyter notebooks.
-It is effectively an alternative interface to use stata if you like jupyter as an interface. This can be useful if you want to write notebooks that are integrated with stata code. It supports a wide range of interaction with stata. To install using anaconda tools you can use the following commands in a jupyter notebook:
+To install in your local computer directly, open terminal and run:
 
 ```{shell}
 pip install -U git+https://github.com/kylebarron/stata_kernel
 python -m stata_kernel.install
 ```
 
-It is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. pip doesn’t have this issue as it doesn’t request user input.
-!conda install -y -c conda-forge stata_kernel
-Copy to clipboard
-once the software is installed you need to install the jupyter kernel on your computer
+To install using anaconda tools, it is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. Then, run:
 
-!python -m stata_kernel.install
-Copy to clipboard
-Warning
-[macOS] When I ran the kernel install step I got the following error:
+```conda
+conda install -y -c conda-forge stata_kernel
+```
+Once the software is installed you need to install the jupyter kernel on your computer
+
+```bash
+python -m stata_kernel.install
+```
 
 https://kylebarron.dev/stata_kernel/using_stata_kernel/configuration
 Copy to clipboard
 and had to manually set the stata path in the .stata_kernel.conf file located in your home directory to the following:
 
-# Path to stata executable. If you type this in your terminal, it should
-# start the Stata console
+
 stata_path = /Applications/Stata/StataIC.app/Contents/MacOS/StataIC
 
-# **macOS only**
-# The manner in which the kernel connects to Stata. Either 'console' or
-# 'automation'. 'console' is the default because it allows multiple
-# independent sessions of Stata at the same time.
 execution_mode = automation
-Copy to clipboard
-Unfortunately StataIC is limited on mac os so I had to use automation instead of console as per this issue in the docs However this does enable the use of browse
+Unfortunately StataIC is limited on mac os so I had to use automation instead of console as per this issue in the docs.
 If you start jupyter notebook you should now see a stata kernel option. If selected a jupyter notebook will open with a connection to stata. You can verify this on the top-right of the notebook
-
 
 ### 3.3. Launch Jupyter Notebook
 
