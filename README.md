@@ -54,7 +54,7 @@ The workshop will introduce you to create static documents with Jupyter notebook
 
 ### What we will cover?
 <p align="justify">
-The curriculum lays out the importance of reproducibility in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume atendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
+The curriculum lays out the importance of reproducibility ◊in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume atendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
 </p>
 The curriculum is as follows:
 
@@ -62,7 +62,7 @@ The curriculum is as follows:
 2. [ Prerequirements. ](#preq)
 3. [ Setup Instructions. ](#setup)
 4. [ Kick-off. ](#kick)
-
+5. [ Miscellaneous. ](#misc)
 
 <a name="back"></a>
 ## 1. Background
@@ -71,37 +71,21 @@ The curriculum is as follows:
 The name of this workshop is inspired in Donald Knuth's conceptual use of literate programming, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, with snippets of macros and source code, which can be compiled and rerun. An executable paper!
 </p>
 <p align="justify">
-As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is of our best interest to ensure our analysis is reproducible adn executable by anybody. The number one cause of irreproducible research is that authors produce their analysis out of order and without proper documentation. 
+As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is in our best interest to ensure our analyses are reproducible, properly documented and executable.
 </p>
+
 <p align="justify">
-Jupyter notebooks are heavily used in data science, because of it's  The jupyter name comes from 3 programming languages: Julia, Python, and R. You can use one programming language per document, and it is done through choosing a kernel (e.g. Python, R, Go, and more -- get the full list of kernels from the wiki).
+Jupyter notebooks, as well as other computation notebooks such as RMarkdowns, are heavily used in data science, because of it's interoperability with multiple programming languages --Julia, Python, R, SQL, bash, and Stata! Incorporating results directly into your documents is an important step in reproducible research.
+Jupyter notebooks can be comprised mainly of three types of cells (though more can be added with plugins):
+
++ [Markdown cells](https://daringfireball.net/projects/markdown/syntax):  Text can be added to Jupyter Notebooks using this type of cells. Markdown is a popular markup language that is a superset of HTML. 
+
++ Code Cells: Allow users to edit and write code, with full syntax highlighting and tab completion. The programming language you use depends on the kernel, and the default kernel runs Python. The results that are returned from this computation are then displayed in the notebook as the cell’s output.
+
++ Raw cells: Provide a place in which you can write output directly. Raw cells are not evaluated by the notebook.
 </p>
 
 
-Jupyter notebooks can be comprised mainly of two types of cells (though more can be added with plugins).
-
-Markdown Cells (for narratives): when run, a markdown cell will display markdown or HTML that you write (that means all sort of rich content, including images). Essential markdown summary: https://daringfireball.net/projects/markdown/syntax
-Code Cells (for data cleaning, analysis, visualization, etc.): executable code in a variety of languages, dictated by the kernel (default is Python, but more can be added).
-Some key jupyter notebook shortcuts to keep in mind while you work:
-
-Use shift + enter to run an active cell
-
-Use esc in highlighted cell to toggle command options:
-
-esc + L - show line numbers
-
-esc + M - format cell as Markdown cell
-
-esc + a - insert cell above current cell
-
-esc + b - insert cell below current cell
-
-Check all current variables: run %whos from a code cell
-
-RMarkdown
-RMarkdown is another popular literate programming tool and can be considered an extension of Markdown. Like all literate programming tools, it  mixes documentation & code, and not just R code either! You can insert code snippets from other languages (SQL, bash, Python, etc.) into ONE DOCUMENT! Incorporating results directly into your documents is an important step in reproducible research. Any changes that occur in either your data set or the analysis are automatically updated in your document the next time the document is created.
-
-Typically, RMarkdown files are edited from within RStudio. The R for Data Science book contains a great chapter on RMarkdown for more information: https://r4ds.had.co.nz/r-markdown.html.
 
 <a name="preq"></a>
 ## 2. Prerequirements
@@ -112,15 +96,14 @@ To adequately follow through the workshop, you must have:
 + Some experience working with the command line,
 + A GitHub account.
 
-If you do not meet the minimum prerequirements, the workshop will prove a bit more difficult than expected. Please take sometime before our workshop to fulfill these prerequirements and be ready to go. During our workshop we might take a few minutes ensure everyone is ready to go.
-
-### 2.1 Software installation
-
-### a. Command Line
+Please take sometime before our workshop to fulfill these prerequirements and be ready to go.
 
 
+### 2.1. Command Line
 
-### b. Python
+
+
+### 2.2. Python
 
 OS X
 
@@ -179,19 +162,13 @@ $ sudo dnf install python3
 Note that if the version of the python3 package is not recent enough for you, there may be ways of installing more recent versions as well, depending on you distribution. For example installing the python3.9 package on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want to read about multiple Python versions available in Fedora.
 
 
-### c. Github
+### 2.3. Github
 
 GitHub is a code hosting platform for version control and collaboration, widely use to store and share code, track changes, and collaborate on projects with others. To start using GitHub, you need to create an account. You can do this by clicking [here](https://github.com) and signing up for a free account.
 
-Additional resources:
+### 2.4. Stata
 
-+ Creating a [new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
-+ Learning more about how GitHub can support collaborative documentation-writing and knowledge sharing: [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
-
-### d. Stata
-
-Adquire your Stata license and install it your computer. [Stata's website](https://www.stata.com/install-guide/) is comprehensive in terms of the steps needed to install Stata.
-
+Adquire your Stata license and install it your computer. [Stata's](https://www.stata.com/install-guide/) website is comprehensive in terms of the steps needed to install Stata.
 
 
 <a name="setup"></a>
@@ -210,12 +187,14 @@ First, make sure we have Jupyter Notebook installed in your machine. If not inst
 
 ```{shell}
 pip install jupyterlab
+
 ```
+
 ##### PyStata
 
 ```bash
 pip install pystata
-```
+```For additional resources to get started with Gihub, please refer to:
 
 ```bash
 pip install stata_setup
@@ -336,10 +315,28 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 + [notebook-stata-kernel.ipynb](https://github.com/rlmic/literate-economic-analysis/blob/main/notebooks/notebook-stata-kernel.ipynb)
 
+<a name="misc"></a>
 
-## Other resources
+## 5. Miscellaneous
+
+### 5.1 Key jupyter notebook shortcuts
+
++ `shift + enter` to run an active cell
+
++ `esc + L` - show line numbers
+
++ `esc + M` - format cell as Markdown cell
+
++ `esc + a` - insert cell above current cell
+
++ `esc + b` - insert cell below current cell
+
+### 5.2 Other  useful resources
 
 + [Environmental Data Science book](https://edsbook.org/notebooks/gallery/ac327c3a-5264-40a2-8c6e-1e8d7c4b37ef/notebook.html)
+
++ Creating a [new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
++ Learning more about how GitHub can support collaborative documentation-writing and knowledge sharing: [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
 
 
 [^1]: This tutorial was launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
