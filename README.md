@@ -11,7 +11,7 @@
 
 <h2 align="center">
 
-<b>A Case for Computational Notebooks in Economics</b>
+<b>Computational Notebooks</b>
 
 </h2>
 
