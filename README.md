@@ -118,8 +118,7 @@ Compared to a visually attractive GUI, the command line is less user friendly --
 ### 2.2. Python
 
 
-The Python ecosystem consists of a lot of software packages that bring extended functionality and high productivity straight away. There are multiple ways to install Python, using Anancoda or installing it directly in your computer. 
-
+The Python ecosystem consists of a lot of software packages that bring extended functionality and high productivity straight away. There are multiple ways to install Python, either using Anaconda or installing it directly in your computer. Anaconda is highly recommended for beginners.
 
 + Install Python in macOS
 
@@ -158,7 +157,6 @@ GitHub is a code hosting platform for version control and collaboration, widely 
 
 Adquire your Stata license and install it your computer. Stata's website is comprehensive in terms of the steps needed to install Stata.
 
-
 <a name="setup"></a>
 ## 3. Setup Instructions
 
@@ -171,79 +169,59 @@ git clone https://github.com/rlmic/literate-economic-analysis.git
 ```
 
 ### 3.2. Install required packages
-First, make sure we have Jupyter Notebook installed in your machine. If not installed, [please install](https://jupyter.org/install).
+
+#### Jupyter
+Make sure we have jupyter notebook installed in your machine. If you 
+are using Anaconda, jupyter comes pre-packaged and it's already installed. If you are not using Anaconda, you probably have to install jupyterlab or jupyter notebook. If you are want to install jupyterlab directly, without using Anaconda, you can open the terminal and run:
 
 ```{shell}
 pip install jupyterlab
-
 ```
 
-##### PyStata
+#### PyStata
 
 ```bash
 pip install pystata
-```For additional resources to get started with Gihub, please refer to:
+```
+
+#### Stata Setup
+
++ a. Open the terminal and install stata_setup:
 
 ```bash
 pip install stata_setup
-```
-
-open stata_setup and change line 45 with "config.init(edition)"
-
-In Stata, enter the following command to locate the folder containing Stata 17 : display c(sysdir_stata)
 
 pip install --upgrade --user stata_setup
+```
 
++ b. Then, fix the stata set_up file by opening `stata_setup` file and change line `45` with:
+```nano
+config.init(edition)
+```
 
-If you use Windows, it is probably C:\Program Files\Stata16\ado, but it might be someplace else. If you use Mac, it is /Applications/Stata/ado. That is, it is the ado folder in the official Stata folder. If you use Unix, it is /usr/local/stata16/ado.
++  c. Locate path to the folder containing Stata. If you use Windows, it is probably `C:\Program Files\Stata16\ado`. If you use Mac, it is `/Applications/Stata/ado`. If you use Unix, it is `/usr/local/stata16/ado`. In Stata type:
 
-First of all, you need to install the Anaconda Prompt (conda). Tou have to follow the instructions on the conda website: https://conda.io/projects/conda/en/latest/user-guide/install/windows.html.
+```stata
+display c(sysdir_stata)
+```
 
-Then, you have to install the jupyter notebook. The instructions are available on their website: https://jupyter.org/install.
+#### Other packages
 
-In a third step, you have to install PyStata: https://www.stata.com/python/pystata/install.html.
-
-In Stata, enter the following command to locate the folder containing Stata 17 : display c(sysdir_stata)
-
-The software is in this folder 'C:\Program Files\Stata17/' in my case and I use the standard edition.
-
-In conda, install PyStata : pip install --upgrade --user stata_setup
-
-Lastly, you have to install the matplotlib library for an illustration with a 3D graph: https://matplotlib.org/stable/users/installing.html
-
-In conda, you can type:
-
+```{shell}
 python -m pip install -U pip
 
 python -m pip install -U matplotlib
+```
 
-Now, you are ready to launch Stata from the Jupyter Notebook.
+#### Stata Jupyter Kernel
 
-Lastly, you have to install the matplotlib library for an illustration with a 3D graph: https://matplotlib.org/stable/users/installing.html
-
-In conda, you can type:
-
-python -m pip install -U pip
-
-python -m pip install -U matplotlib
-
-Now, you are ready to launch Stata from the Jupyter Notebook.
-
-
-##### Stata Jupyter Kernel¶
-
-pip3 install -U git+https://github.com/kylebarron/stata_kernel
-python3 -m stata_kernel.install
-There is also excellent documentation available.
 The Stata Jupyter Kernel enables using stata directly in jupyter notebooks.
+It is effectively an alternative interface to use stata if you like jupyter as an interface. This can be useful if you want to write notebooks that are integrated with stata code. It supports a wide range of interaction with stata. To install using anaconda tools you can use the following commands in a jupyter notebook:
 
-It is effectively an alternative interface to use stata if you like jupyter as an interface.
-
-This can be useful if you want to write notebooks that are integrated with stata code.
-
-It supports a wide range of interaction with stata
-
-To install using anaconda tools you can use the following commands in a jupyter notebook:
+```{shell}
+pip install -U git+https://github.com/kylebarron/stata_kernel
+python -m stata_kernel.install
+```
 
 It is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. pip doesn’t have this issue as it doesn’t request user input.
 !conda install -y -c conda-forge stata_kernel
@@ -254,11 +232,6 @@ once the software is installed you need to install the jupyter kernel on your co
 Copy to clipboard
 Warning
 [macOS] When I ran the kernel install step I got the following error:
-
-Cannot import kernel
-Installing Jupyter kernel spec
-WARNING: Could not find Stata path.
-Refer to the documentation to see how to set it manually:
 
 https://kylebarron.dev/stata_kernel/using_stata_kernel/configuration
 Copy to clipboard
@@ -278,14 +251,17 @@ Unfortunately StataIC is limited on mac os so I had to use automation instead of
 If you start jupyter notebook you should now see a stata kernel option. If selected a jupyter notebook will open with a connection to stata. You can verify this on the top-right of the notebook
 
 
-
 ### 3.3. Launch Jupyter Notebook
 
 Once installed, launch your notebook with the following command:
 
+> jupyter lab
+
 ```bash
 jupyter-lab
 ```
+
+> jupyter notebook
 
 <a name="kick"></a>
 
@@ -324,18 +300,27 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 + [Installing Python with Anaconda](https://quantecon.github.io/2021-workshop-rsit/resources/python-setup.html#resources-setup)
 
++ [Anaconda Prompt](https://conda.io/projects/conda/en/latest/user-guide/install/windows.html)
+
 + [Python for Windows](https://www.digitalocean.com/community/tutorials/install-python-windows-10)
 
 + [Python on Linux](https://docs.python-guide.org/starting/install3/linux/)
 
 > Github
 + [Creating a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
-+ [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
++ [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915)
 
 > Computational notebooks
 + [Environmental Data Science book](https://edsbook.org/notebooks/gallery/ac327c3a-5264-40a2-8c6e-1e8d7c4b37ef/notebook.html)
 
->Stata and Jupyter
+
+> Jupyter
+
++ [Install Jupyter](https://jupyter.org/install)
+
++ [Jupyter noteboo}(https://jupyter.org/install)
+
+> Stata and Jupyter
 
 + [RSIT Workshop 2021](https://quantecon.github.io/2021-workshop-rsit/week2/session7/stata-and-jupyter.html)
 
@@ -344,6 +329,8 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 + [Stata and R in a jupyter notebook](https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter)
 
 + [Stata and Jupyter](https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a)
+
++ [PyStata](https://www.stata.com/python/pystata/install.html)
 
 
 
