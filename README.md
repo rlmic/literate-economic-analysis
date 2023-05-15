@@ -1,5 +1,5 @@
-<p align="left">
-<img src="https://i0.wp.com/www.bitss.org/wp-content/uploads/2019/03/CEGA-logo-RGB-300-dpi-colour.png?ssl=1" data-canonical-src="https://www.bitss.org" width="280" height="120" />
+<p align="right">
+<img src="https://i0.wp.com/www.bitss.org/wp-content/uploads/2019/03/CEGA-logo-RGB-300-dpi-colour.png?ssl=1" data-canonical-src="https://www.bitss.org" width="260" height="120" />
 </p>
 
 
@@ -15,19 +15,27 @@
 
 </h2>
 
-<p align="center">
-<img src="https://cega.berkeley.edu/wp-content/uploads/2018/10/sidebar_Final-logo_vertical-01_2_3_1.png" data-canonical-src="https://www.bitss.org" width="200" height="230" />
-</p>
+<p> <br /> </p>
+<p> <br /> </p>
 
-<p align="center">
+
+
+<h3 align="center">
 Daniela Pinto Veizaga
-</p>
+</h3>
+
 <p align="center">
 University of California, Berkeley
 </p>
 <p align="center">
 CEGA
 </p>
+
+<p> <br /> </p>
+<p align="center">
+<img src="	https://bitss.github.io/ACRE/BITSS_logo_horizontal.png" data-canonical-src="https://www.bitss.org" width="210" height="90" />
+</p>
+
 
 ## 0. :wave: Introduction
 <p align="justify">
@@ -294,12 +302,6 @@ Copy to clipboard
 Unfortunately StataIC is limited on mac os so I had to use automation instead of console as per this issue in the docs However this does enable the use of browse
 If you start jupyter notebook you should now see a stata kernel option. If selected a jupyter notebook will open with a connection to stata. You can verify this on the top-right of the notebook
 
-References:
-https://kylebarron.dev/stata_kernel/
-https://quantecon.github.io/2021-workshop-rsit/week2/session7/stata-and-jupyter.html
-
-https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter
-https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a
 
 
 ### 3.3. Launch Jupyter Notebook
@@ -349,6 +351,16 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 > Computational notebooks
 + [Environmental Data Science book](https://edsbook.org/notebooks/gallery/ac327c3a-5264-40a2-8c6e-1e8d7c4b37ef/notebook.html)
+
+>Stata and Jupyter
+
++ [RSIT Workshop 2021](https://quantecon.github.io/2021-workshop-rsit/week2/session7/stata-and-jupyter.html)
+
++ [stata_kernel](https://kylebarron.dev/stata_kernel/)
+
++ [Stata and R in a jupyter notebook](https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter)
+
++ [Stata and Jupyter](https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a)
 
 
 
