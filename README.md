@@ -61,7 +61,7 @@ The curriculum is as follows:
 1. [ Background. ](#back)
 2. [ Prerequirements. ](#preq)
 3. [ Setup Instructions. ](#setup)
-4. [ Setup Instructions. ](#setup)
+4. [ Kick-off. ](#kick)
 
 
 <a name="back"></a>
@@ -106,12 +106,6 @@ Typically, RMarkdown files are edited from within RStudio. The R for Data Scienc
 
 <a name="preq"></a>
 ## 2. Prerequirements
-
-<a name="preq"></a>
-## 2. Prerequirements
-
-sometext
-
 
 
 
@@ -199,8 +193,8 @@ Additional resources:
 + Creating a [new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
 + Learning more about how GitHub can support collaborative documentation-writing and knowledge sharing: [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
 
-
-###  Setup Instructions
+<a name="setup"></a>
+## 3. Set-up Instructions
 
 Now, we are ready to go.
 
@@ -208,7 +202,7 @@ Now, we are ready to go.
 
 Clone the repository: To start working on your code locally or remotely, you need to clone the repository. To do this, click on the green “Code” button and copy the URL. Then open up your terminal (or command prompt on Windows) and navigate to the directory where you want to store your code. Type “git clone [repository URL]” to clone the repository.
 
-#### 2. Installe required packages
+#### 2. Install required packages
 
 #### 3. Launch Jupyter Notebook
 
@@ -219,13 +213,6 @@ First, make sure we have Jupyter Notebook installed in your machine. If not inst
 pip install jupyterlab
 ```
 
-
-Add the virtualenv you've cretead in the previous step as a jupyter kernel.
-
-```bash
-$ipython kernel install --name econ-repr --user
-```
-
 Once installed, launch JupyterLab with:
 
 ```
@@ -233,8 +220,8 @@ jupyter-lab
 
 ```
 
-
-#### Quick-off
+<a name="setup"></a>
+## 3=4. Set-up Instructions
 
 ##### PyStata
 
