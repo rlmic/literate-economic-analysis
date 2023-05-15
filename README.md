@@ -33,7 +33,7 @@ CEGA
 
 <p> <br /> </p>
 <p align="center">
-<img src="	https://bitss.github.io/ACRE/BITSS_logo_horizontal.png" data-canonical-src="https://www.bitss.org" width="210" height="90" />
+<img src="https://bitss.github.io/ACRE/BITSS_logo_horizontal.png" data-canonical-src="https://www.bitss.org" width="210" height="90" />
 </p>
 
 
