@@ -30,9 +30,9 @@ CEGA
 </p>
 
 ## :wave: Introduction
-
-*Computation notebooks* have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
-
+<p align="justify">
+Computation notebooks have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
+</p>
 
 <p align="center" width="100%">
     <img src="https://edsbook.org/_images/notebook-cycle.jpg" width="80%" height="410" />
@@ -43,32 +43,19 @@ Source: The Turing Way project. Illustration by Scriberia as part of The Turing 
 </p>
 
 ### Who is this workshop for?
+<p align="justify">
+This workshop is designed for those who want to take their data analysis skills and expertise in Stata and potentiate them with computation notebooks. Jupyter notebook is one such form of interactive computing environment that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and resources. 
+</p>
 
-This workshop is designed for those who want to take their data analysis skills and expertise in Stata and potentiate them with computation notebooks. Jupyter notebook is one such form of interactive computing environment that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and resources.
+<p align="justify">
+The workshop will introduce you to create static documents with Jupyter notebooks, add interactivity to them and integrate them with your regular workflow in Stata, translating code, widgets, narrative text, equations, and graphical objects into one working, collaborative, interactive and reproducible document.
+</p>
 
-The workshop will introduce you to create static documents with Jupyter notebooks, add interactivity to them and integrate them with your regular workflow in Stata, translating code, widgets, narrative text, equations, and graphical objects into one **working, collaborative, interactive and reproducible document.**
 
-
-### What will be cover in this guide?
+### What will cover?
 
 Our number one priority at DSSG is to train fellows to do responsible data science/ML/AI for social good work. This curriculum includes many things you'd find in a data science course or bootcamp, but with an emphasis on solving problems with social impact, integrating data science with the social sciences, understanding and discussing ethical implications of the work, as well as privacy, and confidentiality issues.
 
-We have spent many (sort of) early mornings waxing existential over Dunkin' Donuts while trying to define what makes a "data scientist for social good," that enigmatic breed combining one part data scientist, one part helper, one part educator, and one part bleeding heart idealist. We've come to a rough working definition in the form of the skills and knowledge one would need, which we categorize as follows:
-
-Programming, because you'll need to tell your computer what to do, usually by writing code.
-Computer science, because you'll need to understand how your data is - and should be - structured, as well as the algorithms you use to analyze it.
-Math and stats, because everything else in life is just applied math, and numerical results are meaningless without some measure of uncertainty.
-Machine learning, because you'll want to build predictive or descriptive models that can learn, evolve, and improve over time.
-Social science, because you'll need to know how to design experiments to validate your models in the field, and to understand when correlation can plausibly suggest causation, and sometimes even do causal inference.
-Problem and Project Scoping, because you'll need to be able to go from a vague and fuzzy project description to a problem you can solve, understand the goals of the project, the interventions you are informing, the data you have and need, and the analysis that needs to be done.
-Project management, to make progress as a team, to work effectively with your project partner, and work with a team to make that useful solution actually happen.
-Privacy and security, because data is people and needs to be kept secure and confidential.
-Ethics, fairness, bias, and transparency, because your work has the potential to be misused or have a negative impact on people's lives, so you have to consider the biases in your data and analyses, the ethical and fairness implications, and how to make your work interpretable and transparent to the users and to the people impacted by it.
-Communications, because you'll need to be able to tell the story of why what you're doing matters and the methods you're using to a broad audience.
-Social issues, because you're doing this work to help people, and you don't live or work in a vacuum, so you need to understand the context and history surrounding the people, places and issues you want to impact.
-All material is licensed under CC-BY 4.0 License: CC BY 4.0
-
-Table of Contents
 
 ## Background
 The name of this workshop is inspired in Donald Knuth's conceptual use of *literate programming*, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, interspersed with snippets of macros and source code, which can be compiled and rerun. An executable paper!
@@ -334,6 +321,7 @@ Now, you are ready to launch Stata from the Jupyter Notebook.
 
 
 ##### Stata Jupyter Kernel¶
+
 There is also excellent documentation available.
 The Stata Jupyter Kernel enables using stata directly in jupyter notebooks.
 
@@ -345,7 +333,6 @@ It supports a wide range of interaction with stata
 
 To install using anaconda tools you can use the following commands in a jupyter notebook:
 
-Tip
 It is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. pip doesn’t have this issue as it doesn’t request user input.
 !conda install -y -c conda-forge stata_kernel
 Copy to clipboard
