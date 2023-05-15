@@ -94,7 +94,6 @@ Jupyter notebooks can be comprised mainly of three types of cells (though more c
 </p>
 
 
-
 <a name="preq"></a>
 ## 2. Prerequirements
 
@@ -118,31 +117,25 @@ Compared to a visually attractive GUI, the command line is less user friendly --
 
 ### 2.2. Python
 
-OS X
 
-Python is probably already installed on your system. To check if it’s installed, go to Applications > Utilities and click on Terminal.
-
-On
-
-Find out which version of Python is installed by issuing the command python --version:
-Install Python with Homebrew
-
-Homebrew is a package installer.
+The Python ecosystem consists of a lot of software packages that bring extended functionality and high productivity straight away. There are multiple ways to install Python, using Anancoda or installing it directly in your computer. 
 
 
-Python installed in our systems
++ Install Python in macOS
 
-Install Python with Homebrew
-
-Homebrew is a package installer.
-
-First, install Homebrew.
+As a macOS user, you probably have Python installed on your system already. To check if it's installed, open your CLI and type:
 
 ```bash
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+python --version
 ```
 
-Then, install brew to Path:
+If not installed, you can install Python with Homebrew, a package installer. First, install Homebrew.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
+Then, install brew to path:
 
 ```bash
 $export PATH="/usr/local/opt/python/libexec/bin:$PATH"
@@ -151,28 +144,10 @@ $export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 Next, install Python.
 
 ```bash
-$brew install python
+brew install python
 ```
 
-Ubuntu Linux machines.
-
-To see which version of Python 3 you have installed, open a command prompt and run
-
-$ python3 --version
-If you are using Ubuntu 16.10 or newer, then you can easily install Python 3.6 with the following commands:
-
-$ sudo apt-get update
-$ sudo apt-get install python3.6
-If you’re using another version of Ubuntu (e.g. the latest LTS release) or you want to use a more current Python, we recommend using the deadsnakes PPA to install Python 3.8:
-
-$ sudo apt-get install software-properties-common
-$ sudo add-apt-repository ppa:deadsnakes/ppa
-$ sudo apt-get update
-$ sudo apt-get install python3.8
-If you are using other Linux distribution, chances are you already have Python 3 pre-installed as well. If not, use your distribution’s package manager. For example on Fedora, you would use dnf:
-
-$ sudo dnf install python3
-Note that if the version of the python3 package is not recent enough for you, there may be ways of installing more recent versions as well, depending on you distribution. For example installing the python3.9 package on Fedora 32 to get Python 3.9. If you are a Fedora user, you might want to read about multiple Python versions available in Fedora.
+For other operating systems, please refer to the resources available at the end of this document.
 
 
 ### 2.3. [Github](https://github.com)
@@ -345,6 +320,14 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 + [Command line for beginners](https://learndjango.com/tutorials/terminal-command-line-beginners)
 
+> Python
+
++ [Installing Python with Anaconda](https://quantecon.github.io/2021-workshop-rsit/resources/python-setup.html#resources-setup)
+
++ [Python for Windows](https://www.digitalocean.com/community/tutorials/install-python-windows-10)
+
++ [Python on Linux](https://docs.python-guide.org/starting/install3/linux/)
+
 > Github
 + [Creating a new GitHub account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account) 
 + [CarpentryCon 2022: Skill-up - Using GitHub for Collaboration in Open Source Communities](https://youtu.be/Vcckl-2dASM?t=5915).
@@ -361,6 +344,7 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 + [Stata and R in a jupyter notebook](https://notebook.community/jhconning/Dev-II/notebooks/Stata_in_jupyter)
 
 + [Stata and Jupyter](https://medium.com/the-researchers-guide/how-to-use-stata-and-python-together-directly-from-jupyter-notebook-708fa25dab7a)
+
 
 
 
