@@ -267,11 +267,93 @@ Execute the jupyter notebooks available at the following path `notebooks`:
 
 + [notebook-stata-kernel.ipynb](https://github.com/rlmic/literate-economic-analysis/blob/main/notebooks/notebook-stata-kernel.ipynb)
 
+
+
 <a name="misc"></a>
 
 ## 5. Miscellaneous
 
-### 5.1 Key jupyter notebook shortcuts
+### 5.1. Quick Start
+
++ Command line install Anaconda on macOs. You can check how to install Anaconda in windows, following the instructions in [Anaconda](https://docs.anaconda.com/free/anaconda/install/).
+
+Use this method if you prefer to use a terminal (highly recommended). Make sure you have preinstalled `xcode`, `brew` and `wget`.
+
+    + Open terminal
+
+    + Prerequirements
+
+Make sure you have preinstalled `xcode`, `brew` and `wget`.
+
+```{bash}
+# install xcode
+xcode-select --install
+```
+
+```{bash}
+# install homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+```{bash}
+# install brew
+brew install wget
+```
+ 
+    +  Download miniconda
+``
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
+bash ~/miniconda.sh -b -p $HOME/miniconda
+```
+
+    +  Change paths
+
+```{bash}
+source <path to conda>/bin/activate
+```
+
+```{bash}
+conda init zsh
+```
+
+    +  Install necessary packages in conda enviroment.
+
+```
+pip install stata_setup
+```
+
+```{bash}
+pip install pystata
+```
+
++ Clone repository
+
+```{bash}
+git clone https://github.com/rlmic/literate-economic-analysis.git
+```
+
++ Launch jupyter lab
+
+```{bash}
+jupyter lab
+```
+
++ Change PYTHONPATH
+```{bash}
+export PYTHONPATH=$PWD
+```
+
++ Jupyter notebook to HTML 
+
+```{bash}
+jupyter nbconvert --execute --to html notebook.ipynb
+```
+
+
+![](https://github.com/rlmic/literate-economic-analysis/tree/main/outputs/gifs)
+
+
+### 5.2 Key jupyter notebook shortcuts
 
 + `shift + enter` to run an active cell
 
