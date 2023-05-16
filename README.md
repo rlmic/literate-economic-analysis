@@ -349,7 +349,7 @@ export PYTHONPATH=$PWD
 jupyter nbconvert --execute --to html notebook.ipynb
 ```
 
-![](https://github.com/rlmic/literate-economic-analysis/tree/main/outputs/gifs)
+![Try](https://github.com/rlmic/literate-economic-analysis/blob/main/outputs/gifs/out.gif)
 
 
 
