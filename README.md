@@ -349,10 +349,8 @@ export PYTHONPATH=$PWD
 jupyter nbconvert --execute --to html notebook.ipynb
 ```
 
-
-
-
 ![](https://github.com/rlmic/literate-economic-analysis/tree/main/outputs/gifs)
+
 
 
 ### 5.2 Key jupyter notebook shortcuts
