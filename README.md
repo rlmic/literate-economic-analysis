@@ -350,6 +350,8 @@ jupyter nbconvert --execute --to html notebook.ipynb
 ```
 
 
+
+
 ![](https://github.com/rlmic/literate-economic-analysis/tree/main/outputs/gifs)
 
 
