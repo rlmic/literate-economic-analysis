@@ -299,18 +299,18 @@ xcode-select --install
 # install brew
 brew install wget
 ```
- ls
 
-    +  Download miniconda
-```
++  Download miniconda
+
+```{bash}
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
 ```
 
-```
+```{bash}
 bash ~/miniconda.sh -b -p $HOME/miniconda
 ```
 
-    +  Change paths
++  Change paths
 
 ```{bash}
 source <path to conda>/bin/activate
@@ -320,7 +320,7 @@ source <path to conda>/bin/activate
 conda init zsh
 ```
 
-    +  Install necessary packages in conda enviroment.
++  Install necessary packages in conda enviroment.
 
 ```
 pip install stata_setup
@@ -357,7 +357,7 @@ jupyter nbconvert --execute --to html notebook.ipynb
 Click here to see an interactive example:
 
 
-![Example](https://github.com/rlmic/literate-economic-analysis/images/gifs/out.gif)
+![Example](https://github.com/rlmic/literate-economic-analysis/blob/main/images/gifs/out.gif)
 
 
 
