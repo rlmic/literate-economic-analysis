@@ -302,7 +302,7 @@ brew install wget
  ls
 
     +  Download miniconda
-``
+```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
 ```
 
@@ -357,7 +357,7 @@ jupyter nbconvert --execute --to html notebook.ipynb
 Click here to see an interactive example:
 
 
-![](https://github.com/rlmic/literate-economic-analysis/tree/main/images/gifs/out.gif)
+![Example](https://github.com/rlmic/literate-economic-analysis/images/gifs/out.gif)
 
 
 
