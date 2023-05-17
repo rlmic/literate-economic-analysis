@@ -61,7 +61,7 @@ The workshop will introduce you to create static documents with Jupyter notebook
 
 ### What we will cover?
 <div align="justify">
-The curriculum lays out the importance of reproducibility ◊in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume atendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
+The curriculum lays out the importance of reproducibility ◊in the context of economic data analysis, and providing an overview of the common concepts, tools and resources. We assume attendees are familiar to version control, testing, and reproducible computational environments. We build on these core concepts, to boost our data analysis skills integrating Jupyter Notebooks, Python and Stata.
 
 The curriculum is as follows:
 
@@ -78,7 +78,7 @@ The curriculum is as follows:
 <div align="justify">
 The name of this workshop is inspired in Donald Knuth's conceptual use of literate programming, defined as a script, notebook, or computational document that contains an explanation of a program's logic in a natural language, with snippets of macros and source code, which can be compiled and rerun. An executable paper!
 
-As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regarless of our software preferance, it is in our best interest to ensure our analyses are reproducible, properly documented and executable.
+As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regardless of our software preference, it is in our best interest to ensure our analyses are reproducible, properly documented and executable.
 
 Jupyter notebooks, as well as other computation notebooks such as RMarkdowns, are heavily used in data science, because of it's interoperability with multiple programming languages --Julia, Python, R, SQL, bash, and Stata! Incorporating results directly into your documents is an important step in reproducible research.
 Jupyter notebooks can be comprised mainly of three types of cells (though more can be added with plugins):
@@ -152,7 +152,7 @@ GitHub is a code hosting platform for version control and collaboration, widely 
 
 ### 2.4. [Stata](https://www.stata.com/install-guide/)
 
-Adquire your Stata license and install it your computer. Stata's website is comprehensive in terms of the steps needed to install Stata.
+Acquire your Stata license and install it your computer. Stata's website is comprehensive in terms of the steps needed to install Stata.
 
 <a name="setup"></a>
 ## 3. Setup Instructions
@@ -259,7 +259,7 @@ jupyter notebook
 
 ## 4. Kick-off
 
-There are two ways to run Stata code in jupyter notebook, if you want to use a Stata Kernell to run Stata code in Jupyter, then you must select the `Stata` kernell.
+There are two ways to run Stata code in jupyter notebook, if you want to use a Stata Kernel to run Stata code in Jupyter, then you must select the `Stata` kernel.
 
 Execute the jupyter notebooks available at the following path `notebooks`:
 
@@ -281,7 +281,7 @@ Use this method if you prefer to use a terminal (highly recommended). Make sure 
 
     + Open terminal
 
-    + Prerequirements
+    + Requirements
 
 Make sure you have preinstalled `xcode`, `brew` and `wget`.
 
@@ -320,7 +320,7 @@ source <path to conda>/bin/activate
 conda init zsh
 ```
 
-+  Install necessary packages in conda enviroment.
++  Install necessary packages in conda environment.
 
 ```
 pip install stata_setup
@@ -422,4 +422,4 @@ Click here to see an interactive example:
 
 
 
-[^1]: This tutorial was launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a confederence hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
+[^1]: This tutorial was launched as part of the [Research Transparency and Reproducibility Training (RT2) 2023](https://www.bitss.org/event-types/rt2-institute/), a conference hosted at the University of California, Berkeley that aims to provide an overview of tools and practices for transparent and reproducible social science research.
