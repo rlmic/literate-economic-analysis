@@ -301,7 +301,8 @@ brew install wget
 ```
  
     +  Download miniconda
-``
+    
+```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
 bash ~/miniconda.sh -b -p $HOME/miniconda
 ```
@@ -349,6 +350,8 @@ export PYTHONPATH=$PWD
 jupyter nbconvert --execute --to html notebook.ipynb
 ```
 
+A quick demostration:  
+    
 ![Try](https://github.com/rlmic/literate-economic-analysis/blob/main/outputs/gifs/out.gif)
 
 
