@@ -285,19 +285,19 @@ Use this method if you prefer to use a terminal (highly recommended). Make sure 
 
 Make sure you have preinstalled `xcode`, `brew` and `wget`.
 
-+ install xcode
++ Install xcode
+
 ```{bash}
-# install xcode
 xcode-select --install
 ```
 
-+ install homebrew
++ Install homebrew
 
 ```{bash}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-+ install brew
++ Install brew
 
 ```{bash}
 brew install wget
