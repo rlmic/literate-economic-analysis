@@ -40,7 +40,7 @@ CEGA
 
 ## 0. :wave: Introduction
 
-Computation notebooks have become a successful mechanism for prototyping and writing examples to showcase a piece of software, sharing data analysis and documenting research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
+Computation notebooks have become a successful mechanism for prototyping and writing examples to showcase a piece of software, share data analysis and document research workflows. The Literate Economic Data Analysis (LEDA) workshop is a hands-on tutorial[^1] through which we will learn how notebooks can complement the science and methodological development of social science research.
 </div>
 
 <p align="center" width="100%">
@@ -53,7 +53,7 @@ Source: The Turing Way project. Illustration by Scriberia as part of The Turing 
 
 ### Who is this workshop for?
 <div align="justify">
-This workshop is designed for those who want to take their data analysis skills and expertise in Stata and potentiate them with computation notebooks. Jupyter notebook is one such form of interactive computing environment that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and resources. 
+This workshop is designed for those who want to take their data analysis skills and expertise in Stata and enhance them with computation notebooks. Jupyter notebook is one such form of interactive computing environment that offers multilingual programming language support to create dynamic and static documents, books, presentations, blogs, and resources. 
 
 The workshop will introduce you to create static documents with Jupyter notebooks, add interactivity to them and integrate them with your regular workflow in Stata, translating code, widgets, narrative text, equations, and graphical objects into one working, collaborative, interactive and reproducible document.
 </div>
@@ -80,7 +80,7 @@ The name of this workshop is inspired in Donald Knuth's conceptual use of litera
 
 As economists we draw on a handful of statistical softwares, such as Stata, R, and Python, to implement our econometric analysis. Regardless of our software preference, it is in our best interest to ensure our analyses are reproducible, properly documented and executable.
 
-Jupyter notebooks, as well as other computation notebooks such as RMarkdowns, are heavily used in data science, because of it's interoperability with multiple programming languages --Julia, Python, R, SQL, bash, and Stata! Incorporating results directly into your documents is an important step in reproducible research.
+Jupyter notebooks, as well as other computation notebooks such as RMarkdowns, are heavily used in data science, because of their interoperability with multiple programming languages --Julia, Python, R, SQL, bash, and Stata! Incorporating results directly into your documents is an important step in reproducible research.
 Jupyter notebooks can be comprised mainly of three types of cells (though more can be added with plugins):
 
 + [Markdown cells](https://daringfireball.net/projects/markdown/syntax):  Text can be added to Jupyter Notebooks using this type of cells. Markdown is a popular markup language that is a superset of HTML. 
@@ -169,7 +169,7 @@ git clone https://github.com/rlmic/literate-economic-analysis.git
 
 #### Jupyter
 Make sure we have jupyter notebook installed in your machine. If you 
-are using Anaconda, jupyter comes pre-packaged and it's already installed. If you are not using Anaconda, you probably have to install jupyterlab or jupyter notebook. If you are want to install jupyterlab directly, without using Anaconda, you can open the terminal and run:
+are using Anaconda, jupyter comes pre-packaged and it's already installed. If you are not using Anaconda, you probably have to install jupyterlab or jupyter notebook. If you want to install jupyterlab directly, without using Anaconda, you can open the terminal and run:
 
 ```{shell}
 pip install jupyterlab
@@ -191,7 +191,7 @@ pip install stata_setup
 pip install --upgrade --user stata_setup
 ```
 
-+ b. Then, fix the stata set_up file by opening `stata_setup` file and change line `45` with:
++ b. Then, fix the Stata set_up file by opening `stata_setup` file and change line `45` with:
 
 ```nano
 config.init(edition)
@@ -220,7 +220,7 @@ python -m pip install -U matplotlib
 
 #### Stata Jupyter Kernel
 
-The Stata Jupyter Kernel enables using stata directly in jupyter notebooks.
+The Stata Jupyter Kernel enables using Stata directly in jupyter notebooks.
 To install in your local computer directly, open terminal and run:
 
 ```{shell}
@@ -228,7 +228,7 @@ pip install -U git+https://github.com/kylebarron/stata_kernel
 python -m stata_kernel.install
 ```
 
-To install using anaconda tools, it is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. Then, run:
+To install using anaconda tools, it is important to specify -y when issuing install requests via conda as there is no way to accept the user requested y input to proceed with install. To do so, run:
 
 ```conda
 conda install -y -c conda-forge stata_kernel
@@ -285,18 +285,21 @@ Use this method if you prefer to use a terminal (highly recommended). Make sure 
 
 Make sure you have preinstalled `xcode`, `brew` and `wget`.
 
++ install xcode
 ```{bash}
 # install xcode
 xcode-select --install
 ```
 
++ install homebrew
+
 ```{bash}
-# install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
++ install brew
+
 ```{bash}
-# install brew
 brew install wget
 ```
 
@@ -354,14 +357,14 @@ jupyter nbconvert --execute --to html notebook.ipynb
 ```
 
 
-Click here to see an interactive example:
+## 5.2. Interactive example:
 
 
 ![Example](https://github.com/rlmic/literate-economic-analysis/blob/main/images/gifs/out.gif)
 
 
 
-### 5.2 Key jupyter notebook shortcuts
+### 5.3 Key jupyter notebook shortcuts
 
 + `shift + enter` to run an active cell
 
